@@ -45,16 +45,16 @@ int menu(city_st *c, int n) {
     printf("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
     printf("*                                                           *\n"); 
     printf("*      (MENU) Chon mot trong cac cong viec sau:             *\n");
-	printf("*   1. Nhap du lieu cua tung thanh pho                      *\n");
-	printf("*   2. Sap xep, thong ke va hien thi thong tin chi tiet     *\n*      cua tung thanh pho theo quoc gia (Z->A).             *\n"); 
-	printf("*   3. Tim  thanh pho theo quoc gia                         *\n");
-	printf("*   4. Ghi vao tap tin nhi phan city.dat                    *\n");
-	printf("*   5. Thoat                                                *\n");
-	printf("*                                                           *\n");
-	printf("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n\n"); 
-	printf("Nhap vao lua chon cua ban (1 den 5): ");
-	scanf("%d", &luachon);
-	switch(luachon) {
+    printf("*   1. Nhap du lieu cua tung thanh pho                      *\n");
+    printf("*   2. Sap xep, thong ke va hien thi thong tin chi tiet     *\n*      cua tung thanh pho theo quoc gia (Z->A).             *\n"); 
+    printf("*   3. Tim  thanh pho theo quoc gia                         *\n");
+    printf("*   4. Ghi vao tap tin nhi phan city.dat                    *\n");
+    printf("*   5. Thoat                                                *\n");
+    printf("*                                                           *\n");
+    printf("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n\n"); 
+    printf("Nhap vao lua chon cua ban (1 den 5): ");
+    scanf("%d", &luachon);
+    switch(luachon) {
 		case 1: nhap(c, n); break;
 		case 2: xuat(c, n); sapXep(c, n); break; 
 		case 3: timKiem(c, n); break; 
@@ -62,7 +62,7 @@ int menu(city_st *c, int n) {
 		case 5: break; 
 		default: printf("khong co lua chon %d, moi ban lua chon lai!\n", luachon);
 		         menu(c,n); 
-	}
+    }
 }
 
 //Hàm nhap 
